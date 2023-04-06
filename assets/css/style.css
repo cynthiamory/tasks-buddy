@@ -1,59 +1,77 @@
+/* CSS STYLING SETTINGS */
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
 }
 
-textarea {
+/* STYLING FOR THE TEXT AREA WHERE USER TYPES DESCRIPTION OF EVENT */
+textarea{
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: black;
   border-left: 1px solid black;
   padding: 10px;
 }
 
-.description {
+.description{
   white-space: pre-wrap;
+  color: ghostwhite;
+  text-align: center;
 }
 
-.time-block {
-  border-radius: 15px;
+/* STYLING FOR THE HEADER SECTION */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  border-bottom: 18px solid #66BFBF;
+}
+
+.time-block{
+  text-align: right;
+  border-radius: 18px;
 }
 
 .row {
-  border-top: 1px solid white;
+  white-space: pre-wrap;
+  border-top: 3px solid;
+  height: 80px;
 }
 
 .hour {
-  background-color: #ffffff;
+  background-color: #9EA1D4;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px solid #9EA1D4;
 }
 
+/* COLOUR BLOCK FOR PAST, PRESENT AND FUTURE SLOTS */
 .past {
-  background-color: #d3d3d3;
+  background-color: #4E6E81;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #FF0063;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #66BFBF;
   color: white;
 }
 
+/* SAVE BUTTON ICON */
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: #2E3840;
   color: white;
 }
 
 .saveBtn i:hover {
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+  border: 3px solid #00d7c3;
 }
