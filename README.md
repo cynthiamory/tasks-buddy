@@ -16,7 +16,7 @@
 
 ## Description
 
-The goal of this web application was to use the skills we learned with Third Party APIs to create a Workday Scheduler. The user will be able to log their task(s) into the alotted time slots for the current day. Time slots are colour coded. All past time slot hour will turn greyish/blue, a current time slot that is present will turn hot pink and future time slots will be a a mint colour. 
+The goal of this web application was to use the skills we learned with Third Party APIs to create a Workday Scheduler. The user will be able to log their task(s) into the alotted time slots for the current day. Time slots are colour coded. All past time slot hour will turn greyish/blue, a current time slot that is present will turn hot pink and future time slots will be a a mint colour. When the user clicks on the Clear Task button, all the user input will clear form the local storage and refresh.
 
 ## User Story
 - AS AN employee with a busy schedule
@@ -42,6 +42,7 @@ The goal of this web application was to use the skills we learned with Third Par
 
 ## Images
 ![Website Preview Image](./assets/images/tasksbuddypreview.gif)
+![Website Preview Image](./assets/images/taskbuddyclearpreview.gif)
 
 
 ## Link URL to deployed webpage on GitHub

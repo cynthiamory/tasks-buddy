@@ -4,6 +4,30 @@
 
 // THIS IS THE CODE TO DISPLAY THE CURRENT DATE AND TIME IN THE HEADER OF THE PAGE, WHICH IS USING MOMENT.JS
   $("#currentDay").text(moment().format("dddd, MMM DD, YYYY - h:mm:ss a")); 
+
+// VARIABLES TO CLEAR TASKS BUTTON
+  var modal = document.getElementById("myModal");
+  var span = document.getElementsByClassName("sayNo")[0];
+  var clear = document.getElementsByClassName("sayYes")[0];
+  var btn = document.getElementById("clearTask");
+
+// FUNCTIONS FOR ONCLICK WHEN USER INTERACTS WITH CLEAR TASKS BUTTON 
+// ON CLICK, THE MODAL OPENS WHEN USER CLICKS CLEAR MY TASKS AN DOPENS MODAL.
+  btn.onclick = function () {modal.style.display = "block";};
+
+// ON CLICK, WHEN A USER CLICK OUTSIDE OF THE MODAL PROMPT, THE MODAL CLOSES.
+  window.onclick = function (event) {
+  if (event.target == modal) {modal.style.display = "none";}
+  };
+
+// ON CLICK, USER CLICKS NO, THE MODAL CLOSES
+  span.onclick = function () {modal.style.display = "none";};
+
+// USER CLICKS YES, LOCAL STORAGE CLEARS AND RELOADS PAGE.
+  clear.onclick = function () {modal.style.display = "none";
+  localStorage.clear();
+  window.location.reload();
+  };
   
 // THIS IS THE CODE FOR CLICK LISTENER WHEN USER HITS THE "saveBtn" button. 
   $(".saveBtn").on("click", function () {
@@ -56,3 +80,6 @@
 //REPEAT THE TRACKER
   trackTime(); 
 })
+
+
+  
